@@ -3,460 +3,346 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AcousticPro - 음향 설계부터 설치까지, 전문성과 신뢰로 완성하는 완벽한 사운드</title>
+    <title>A49 - 음향 기술의 혁신 | 30년 경험의 음향 전문 기업</title>
+    <meta name="description" content="A49는 30년 경험의 음향 전문 기업입니다. 440Hz A4 음을 기준으로 한 정확한 음향 구현과 최첨단 기술을 제공합니다.">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Header -->
     <header class="header">
-        <div class="container">
-            <div class="header__content flex items-center justify-between">
-                <div class="header__logo">
-                    <h1 class="logo">AcousticPro</h1>
-                </div>
-                <nav class="header__nav">
-                    <ul class="nav-list flex items-center gap-8">
-                        <li><a href="#about" class="nav-link">회사소개</a></li>
-                        <li><a href="#services" class="nav-link">서비스</a></li>
-                        <li><a href="#technology" class="nav-link">기술력</a></li>
-                        <li><a href="#projects" class="nav-link">프로젝트</a></li>
-                        <li><a href="#products" class="nav-link">제품</a></li>
-                        <li><a href="#contact" class="nav-link">문의</a></li>
-                    </ul>
-                </nav>
-                <div class="header__contact flex items-center gap-16">
-                    <div class="contact-info">
-                        <i class="fas fa-phone"></i>
-                        <span>02-1234-5678</span>
-                    </div>
-                    <button class="btn btn--primary" onclick="scrollToSection('contact')">견적문의</button>
-                </div>
-                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+        <nav class="nav container">
+            <div class="nav__brand">
+                <h1 class="nav__logo">A49</h1>
+                <span class="nav__tagline">음향 기술의 혁신</span>
             </div>
-        </div>
+            <ul class="nav__menu" id="navMenu">
+                <li><a href="#home" class="nav__link">Home</a></li>
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#services" class="nav__link">Services</a></li>
+                <li><a href="#technology" class="nav__link">Technology</a></li>
+                <li><a href="#projects" class="nav__link">Projects</a></li>
+                <li><a href="#products" class="nav__link">Products</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+            <button class="nav__toggle" id="navToggle" aria-label="메뉴 토글">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
     </header>
 
-    <!-- Mobile Menu -->
-    <div class="mobile-menu" id="mobile-menu">
-        <nav class="mobile-nav">
-            <ul class="mobile-nav-list">
-                <li><a href="#about" class="mobile-nav-link" onclick="closeMobileMenu()">회사소개</a></li>
-                <li><a href="#services" class="mobile-nav-link" onclick="closeMobileMenu()">서비스</a></li>
-                <li><a href="#technology" class="mobile-nav-link" onclick="closeMobileMenu()">기술력</a></li>
-                <li><a href="#projects" class="mobile-nav-link" onclick="closeMobileMenu()">프로젝트</a></li>
-                <li><a href="#products" class="mobile-nav-link" onclick="closeMobileMenu()">제품</a></li>
-                <li><a href="#contact" class="mobile-nav-link" onclick="closeMobileMenu()">문의</a></li>
-            </ul>
-        </nav>
-    </div>
-
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero__background"></div>
+    <section id="home" class="hero">
         <div class="container">
             <div class="hero__content">
-                <h1 class="hero__title">음향 설계부터 설치까지,<br>전문성과 신뢰로 완성하는 완벽한 사운드</h1>
-                <p class="hero__subtitle">MSO 기반 저주파수 튜닝, 맞춤 음향 설계, 통합 설치 서비스</p>
-                <div class="hero__actions flex gap-16">
-                    <button class="btn btn--primary btn--lg" onclick="scrollToSection('contact')">무료 상담 신청</button>
-                    <button class="btn btn--outline btn--lg" onclick="scrollToSection('projects')">프로젝트 사례 보기</button>
+                <h1 class="hero__title">A49 음향 기술의 혁신</h1>
+                <p class="hero__subtitle">30년 경험의 음향 전문 기업</p>
+                <p class="hero__description">440Hz A4 음을 기준으로 한 정확한 음향 구현과 최첨단 기술로 완벽한 사운드를 창조합니다</p>
+                <div class="hero__waveform" id="waveform">
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services py-16">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">전문 서비스</h2>
-                <p class="section-subtitle">음향 전문가가 제공하는 차별화된 서비스</p>
-            </div>
-            <div class="services__grid">
-                <div class="service-card card">
-                    <div class="service-card__icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <div class="service-card__content">
-                        <h3 class="service-card__title">음향 설계</h3>
-                        <p class="service-card__description">MSO(Multi Sub Optimizer) 활용 저주파수 튜닝</p>
-                        <ul class="service-card__features">
-                            <li>음향판 및 공간 음향 설계</li>
-                            <li>흡음재/확산재 맞춤 설계</li>
-                            <li>시뮬레이션 기반 최적화</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="service-card card">
-                    <div class="service-card__icon">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    <div class="service-card__content">
-                        <h3 class="service-card__title">음향 설치</h3>
-                        <p class="service-card__description">자체 설계의 정확한 구현</p>
-                        <ul class="service-card__features">
-                            <li>시공 후 음향 측정 및 튜닝</li>
-                            <li>통합 서비스 제공</li>
-                            <li>사후관리 및 유지보수</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="service-card card">
-                    <div class="service-card__icon">
-                        <i class="fas fa-cube"></i>
-                    </div>
-                    <div class="service-card__content">
-                        <h3 class="service-card__title">자체 개발 제품</h3>
-                        <p class="service-card__description">고성능 케이블, 음향 패널, 스피커</p>
-                        <ul class="service-card__features">
-                            <li>자체 설계 및 생산</li>
-                            <li>B2B/B2C 고객 대상</li>
-                            <li>커스텀 제작 가능</li>
-                        </ul>
-                    </div>
+                <div class="hero__actions">
+                    <a href="#contact" class="btn btn--primary">문의하기</a>
+                    <a href="#about" class="btn btn--secondary">더 알아보기</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about py-16">
+    <section id="about" class="about">
         <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">회사 소개</h2>
+                <p class="section-subtitle">30년 연구개발 경험을 바탕으로 한 음향 기술 혁신</p>
+            </div>
             <div class="about__content">
-                <div class="about__text">
-                    <h2 class="about__title">전문성과 혁신으로 최고의 음향 환경을 구현합니다</h2>
-                    <p class="about__description">
-                        AcousticPro는 2019년 창립 이래 음향 설계부터 설치까지 통합 서비스를 제공하는 
-                        전문 기업입니다. MSO(Multi Sub Optimizer) 기반의 과학적 설계와 정밀한 시공 기술로
-                        고객에게 최적의 음향 환경을 제공합니다.
-                    </p>
-                    <button class="btn btn--primary" onclick="scrollToSection('contact')">상담 신청</button>
+                <div class="about__info">
+                    <div class="about__item">
+                        <h3>이신렬 박사</h3>
+                        <p>서울대 음향공학 전공, 30년 이상의 연구개발 경험을 바탕으로 A49를 이끌고 있습니다.</p>
+                    </div>
+                    <div class="about__item">
+                        <h3>회사 철학</h3>
+                        <p>440Hz A4 음을 기준으로 한 정확한 음향 구현을 통해 최고 품질의 사운드를 제공합니다.</p>
+                    </div>
+                    <div class="about__item">
+                        <h3>핵심 가치</h3>
+                        <p>음향 기술의 혁신을 통해 고객에게 최상의 청취 경험을 선사하는 것이 우리의 목표입니다.</p>
+                    </div>
                 </div>
-                <div class="about__stats">
-                    <div class="stat-item">
-                        <div class="stat-number">2019</div>
-                        <div class="stat-label">창립연도</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">200+</div>
-                        <div class="stat-label">완료 프로젝트</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">98%</div>
-                        <div class="stat-label">고객 만족도</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">24/7</div>
-                        <div class="stat-label">기술 지원</div>
-                    </div>
+                <div class="about__achievements">
+                    <h3>주요 성과</h3>
+                    <ul>
+                        <li>차세대음향산업 지원센터 협력 기업</li>
+                        <li>음향 기술 특허 15건 보유</li>
+                        <li>정부 조달청 우수 공급업체</li>
+                        <li>ISO 9001 품질 인증</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">서비스</h2>
+                <p class="section-subtitle">전문적인 음향 솔루션을 제공합니다</p>
+            </div>
+            <div class="services__grid">
+                <div class="service-card">
+                    <div class="service-card__icon">🎯</div>
+                    <h3 class="service-card__title">음향 설계</h3>
+                    <p class="service-card__description">MSO(Multi Sub Optimizer)를 활용한 저주파수 튜닝 및 공간 맞춤형 음향판 설계</p>
+                    <ul class="service-card__features">
+                        <li>룸 어쿠스틱 모델링</li>
+                        <li>시뮬레이션 기반 설계</li>
+                        <li>맞춤형 흡음/확산재</li>
+                        <li>주파수 분석 및 튜닝</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">🔧</div>
+                    <h3 class="service-card__title">음향 설치</h3>
+                    <p class="service-card__description">자체 설계를 실제 공간에 구현하는 통합 시공 서비스</p>
+                    <ul class="service-card__features">
+                        <li>전문 시공팀 운영</li>
+                        <li>설치 후 측정</li>
+                        <li>현장 튜닝</li>
+                        <li>사후 관리 서비스</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">📦</div>
+                    <h3 class="service-card__title">제품 판매</h3>
+                    <p class="service-card__description">자체 개발 고성능 음향 장비 및 기술 지원</p>
+                    <ul class="service-card__features">
+                        <li>고성능 케이블</li>
+                        <li>음향 패널</li>
+                        <li>스피커 시스템</li>
+                        <li>B2B/B2C 지원</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Technology Section -->
-    <section id="technology" class="technology py-16">
+    <section id="technology" class="technology">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">보유 기술 및 장비</h2>
-                <p class="section-subtitle">최첨단 장비와 전문 기술로 정확한 음향 분석과 설계를 제공합니다</p>
+                <h2 class="section-title">기술력</h2>
+                <p class="section-subtitle">최첨단 장비와 소프트웨어로 정밀한 음향 분석</p>
             </div>
             <div class="technology__grid">
-                <div class="tech-card card">
-                    <div class="tech-card__image">
-                        <img src="https://pplx-res.cloudinary.com/image/upload/v1751346674/pplx_project_search_images/5166493c8171a23f9ec734ab3d9243442ca6cb0f.jpg" alt="MSO 장비">
-                    </div>
-                    <div class="tech-card__content">
-                        <h3 class="tech-card__title">MSO (Multi Sub Optimizer)</h3>
-                        <p class="tech-card__description">멀티 서브우퍼 최적화 솔루션</p>
-                    </div>
+                <div class="tech-card">
+                    <h3>AP (Audio Precision)</h3>
+                    <p>고정밀 음향 측정 장비</p>
+                    <span class="tech-card__spec">THD+N 0.0001% 측정 가능</span>
                 </div>
-                <div class="tech-card card">
-                    <div class="tech-card__image">
-                        <img src="https://pplx-res.cloudinary.com/image/upload/v1751346675/pplx_project_search_images/4e6dea281ee1c023da321d561932a365dc336e09.jpg" alt="REW 음향 측정">
-                    </div>
-                    <div class="tech-card__content">
-                        <h3 class="tech-card__title">REW 음향 측정</h3>
-                        <p class="tech-card__description">실시간 음향 분석 및 측정</p>
-                    </div>
+                <div class="tech-card">
+                    <h3>Klippel Production Analyzer</h3>
+                    <p>스피커 생산 품질 분석 시스템</p>
+                    <span class="tech-card__spec">실시간 품질 모니터링</span>
                 </div>
-                <div class="tech-card card">
-                    <div class="tech-card__image">
-                        <img src="https://i0.wp.com/www.bedrock-elite.com/wp-content/uploads/2024/06/BRE-SOUND-ANALYZER-1-3-1.png?fit=1024%2C724&ssl=1" alt="NTI 측정 장비">
-                    </div>
-                    <div class="tech-card__content">
-                        <h3 class="tech-card__title">NTI 측정 장비</h3>
-                        <p class="tech-card__description">전문 음향 분석 장비</p>
-                    </div>
+                <div class="tech-card">
+                    <h3>FineCone 설계 프로그램</h3>
+                    <p>스피커 설계 전용 소프트웨어</p>
+                    <span class="tech-card__spec">3D 모델링 및 시뮬레이션</span>
                 </div>
-                <div class="tech-card card">
-                    <div class="tech-card__image">
-                        <img src="https://pplx-res.cloudinary.com/image/upload/v1751346674/pplx_project_search_images/a1f211e66a9f49aee69c938f29614cc099cb8bd6.jpg" alt="3D 음향 시뮬레이션">
-                    </div>
-                    <div class="tech-card__content">
-                        <h3 class="tech-card__title">3D 음향 시뮬레이션</h3>
-                        <p class="tech-card__description">공간 음향 특성 예측 및 설계</p>
-                    </div>
+                <div class="tech-card">
+                    <h3>MSO (Multi Sub Optimizer)</h3>
+                    <p>서브우퍼 최적화 소프트웨어</p>
+                    <span class="tech-card__spec">저주파수 룸 튜닝</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects py-16">
+    <section id="projects" class="projects">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">주요 프로젝트</h2>
-                <p class="section-subtitle">다양한 분야에서 축적된 전문 경험과 성공 사례</p>
+                <h2 class="section-title">프로젝트</h2>
+                <p class="section-subtitle">주요 납품 실적과 성공 사례</p>
             </div>
             <div class="projects__grid">
-                <div class="project-card card">
-                    <div class="project-card__image">
-                        <img src="https://pplx-res.cloudinary.com/image/upload/v1751346673/pplx_project_search_images/a647cce54c568e178c26cd53d2898d0e4cc924a4.jpg" alt="대형 콘서트홀 음향 설계">
+                <div class="project-card">
+                    <div class="project-card__header">
+                        <h3>해양경찰청</h3>
+                        <span class="project-card__year">2023</span>
                     </div>
-                    <div class="project-card__content">
-                        <div class="project-card__category">공연장</div>
-                        <h3 class="project-card__title">대형 콘서트홀 음향 설계</h3>
-                        <p class="project-card__description">2,000석 규모 콘서트홀 완벽한 음향 구현</p>
-                    </div>
+                    <h4>지휘통제실 음성 방송 시스템</h4>
+                    <p>STI 0.5 이상 음성명료도 구현</p>
                 </div>
-                <div class="project-card card">
-                    <div class="project-card__image">
-                        <img src="https://pplx-res.cloudinary.com/image/upload/v1749849736/pplx_project_search_images/0603783da19d1596354f45a85afd0ca705226d5d.jpg" alt="프리미엄 레코딩 스튜디오">
+                <div class="project-card">
+                    <div class="project-card__header">
+                        <h3>산업통상자원부</h3>
+                        <span class="project-card__year">2023</span>
                     </div>
-                    <div class="project-card__content">
-                        <div class="project-card__category">스튜디오</div>
-                        <h3 class="project-card__title">프리미엄 레코딩 스튜디오</h3>
-                        <p class="project-card__description">하이엔드 레코딩 환경 구축</p>
-                    </div>
+                    <h4>회의실 음향 시스템</h4>
+                    <p>고품질 음성 회의 환경 구축</p>
                 </div>
-                <div class="project-card card">
-                    <div class="project-card__image">
-                        <img src="https://pplx-res.cloudinary.com/image/upload/v1749021275/pplx_project_search_images/d756716289191b3fcf010220b174320757fd0435.jpg" alt="기업 미디어센터">
+                <div class="project-card">
+                    <div class="project-card__header">
+                        <h3>LG전자</h3>
+                        <span class="project-card__year">2022</span>
                     </div>
-                    <div class="project-card__content">
-                        <div class="project-card__category">기업시설</div>
-                        <h3 class="project-card__title">기업 미디어센터</h3>
-                        <p class="project-card__description">방송 및 컨퍼런스 전용 공간</p>
-                    </div>
+                    <h4>제품 테스트 챔버</h4>
+                    <p>무향실 설계 및 시공</p>
                 </div>
-                <div class="project-card card">
-                    <div class="project-card__image">
-                        <img src="https://pplx-res.cloudinary.com/image/upload/v1751346673/pplx_project_search_images/a647cce54c568e178c26cd53d2898d0e4cc924a4.jpg" alt="멀티플렉스 영화관">
+                <div class="project-card">
+                    <div class="project-card__header">
+                        <h3>삼성전자</h3>
+                        <span class="project-card__year">2022</span>
                     </div>
-                    <div class="project-card__content">
-                        <div class="project-card__category">상업시설</div>
-                        <h3 class="project-card__title">멀티플렉스 영화관</h3>
-                        <p class="project-card__description">최신 사운드 시스템 도입</p>
-                    </div>
+                    <h4>R&D 센터 음향실</h4>
+                    <p>정밀 측정 환경 구축</p>
                 </div>
-                <div class="project-card card">
-                    <div class="project-card__image">
-                        <img src="https://pplx-res.cloudinary.com/image/upload/v1749021275/pplx_project_search_images/d756716289191b3fcf010220b174320757fd0435.jpg" alt="교회 예배당 음향">
+                <div class="project-card">
+                    <div class="project-card__header">
+                        <h3>KBS</h3>
+                        <span class="project-card__year">2021</span>
                     </div>
-                    <div class="project-card__content">
-                        <div class="project-card__category">종교시설</div>
-                        <h3 class="project-card__title">교회 예배당 음향</h3>
-                        <p class="project-card__description">명료한 음성 전달 시스템</p>
-                    </div>
+                    <h4>방송 스튜디오</h4>
+                    <p>방송용 음향 시설 구축</p>
                 </div>
-                <div class="project-card card">
-                    <div class="project-card__image">
-                        <img src="https://pplx-res.cloudinary.com/image/upload/v1751346673/pplx_project_search_images/a647cce54c568e178c26cd53d2898d0e4cc924a4.jpg" alt="학교 강당 리모델링">
-                    </div>
-                    <div class="project-card__content">
-                        <div class="project-card__category">교육시설</div>
-                        <h3 class="project-card__title">학교 강당 리모델링</h3>
-                        <p class="project-card__description">교육 환경 최적화</p>
-                    </div>
-                </div>
-            </div>
-            <div class="projects__actions">
-                <button class="btn btn--outline" onclick="scrollToSection('contact')">더 많은 사례 보기</button>
             </div>
         </div>
     </section>
 
-    <!-- Trust Section -->
-    <section id="trust" class="trust py-16">
+    <!-- Products Section -->
+    <section id="products" class="products">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">고객 신뢰도</h2>
-                <p class="section-subtitle">다양한 분야의 고객사와 함께한 성공적인 파트너십</p>
+                <h2 class="section-title">제품</h2>
+                <p class="section-subtitle">자체 개발 고성능 음향 장비</p>
             </div>
-            <div class="trust__clients">
-                <div class="clients-slider">
-                    <div class="client-logo">삼성전자</div>
-                    <div class="client-logo">LG전자</div>
-                    <div class="client-logo">현대자동차</div>
-                    <div class="client-logo">SK텔레콤</div>
-                    <div class="client-logo">네이버</div>
-                    <div class="client-logo">카카오</div>
-                </div>
-            </div>
-            <div class="trust__testimonials">
-                <div class="testimonial">
-                    <p class="testimonial__text">
-                        "정확한 설계와 완벽한 시공으로 기대 이상의 결과를 얻었습니다. 특히 MSO를 활용한 저주파 튜닝이 인상적이었습니다."
-                    </p>
-                    <div class="testimonial__author">
-                        <div class="testimonial__name">김영수 부장</div>
-                        <div class="testimonial__company">○○엔터테인먼트</div>
+            <div class="products__grid">
+                <div class="product-card">
+                    <h3>오디오 전용 USB 케이블</h3>
+                    <p>USB-IF 기준 준수 고품질 케이블</p>
+                    <div class="product-card__specs">
+                        <h4>주요 사양</h4>
+                        <ul>
+                            <li>노이즈 차폐 설계</li>
+                            <li>고순도 구리 도체</li>
+                            <li>USB 2.0/3.0 지원</li>
+                            <li>길이: 0.5m, 1m, 2m</li>
+                        </ul>
                     </div>
+                    <p class="product-card__application"><strong>적용분야:</strong> DAC, 오디오 인터페이스 연결</p>
                 </div>
-                <div class="testimonial">
-                    <p class="testimonial__text">
-                        "프로젝트 진행 과정에서 전문적인 컨설팅과 세심한 관리가 돋보였습니다. 최고의 파트너였습니다."
-                    </p>
-                    <div class="testimonial__author">
-                        <div class="testimonial__name">이미정 대표</div>
-                        <div class="testimonial__company">△△스튜디오</div>
+                <div class="product-card">
+                    <h3>보청기 기능 사운드바</h3>
+                    <p>청각 보조 기능이 내장된 스마트 사운드바</p>
+                    <div class="product-card__specs">
+                        <h4>주요 사양</h4>
+                        <ul>
+                            <li>주파수 대역 강화</li>
+                            <li>음성 명료도 개선</li>
+                            <li>블루투스 5.0</li>
+                            <li>출력: 60W RMS</li>
+                        </ul>
                     </div>
+                    <p class="product-card__application"><strong>적용분야:</strong> 가정용, 의료기관용</p>
+                </div>
+                <div class="product-card">
+                    <h3>터널 음성 방송 시스템</h3>
+                    <p>터널 환경 특화 음성 방송 솔루션</p>
+                    <div class="product-card__specs">
+                        <h4>주요 사양</h4>
+                        <ul>
+                            <li>STI 0.45 이상</li>
+                            <li>IP65 방수 등급</li>
+                            <li>내화성 케이블</li>
+                            <li>원격 모니터링</li>
+                        </ul>
+                    </div>
+                    <p class="product-card__application"><strong>적용분야:</strong> 지하철, 도로 터널</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact py-16">
+    <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">문의 및 견적 요청</h2>
-                <p class="section-subtitle">전문가와 상담하고 맞춤 견적을 받아보세요</p>
+                <h2 class="section-title">문의</h2>
+                <p class="section-subtitle">전문적인 음향 솔루션이 필요하시면 언제든 연락주세요</p>
             </div>
             <div class="contact__content">
                 <div class="contact__info">
-                    <h3 class="contact__info-title">연락처 정보</h3>
-                    <div class="contact__info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <div class="contact__info-label">주소</div>
-                            <div class="contact__info-value">서울특별시 강남구 테헤란로 123, 12층</div>
-                        </div>
+                    <div class="contact-item">
+                        <h3>연락처</h3>
+                        <p><strong>전화:</strong> 02-1234-5678</p>
+                        <p><strong>이메일:</strong> info@a49.co.kr</p>
+                        <p><strong>운영시간:</strong> 월-금 09:00-18:00</p>
                     </div>
-                    <div class="contact__info-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <div class="contact__info-label">전화</div>
-                            <div class="contact__info-value">02-1234-5678</div>
-                        </div>
-                    </div>
-                    <div class="contact__info-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <div class="contact__info-label">이메일</div>
-                            <div class="contact__info-value">info@acousticpro.co.kr</div>
-                        </div>
+                    <div class="contact-item">
+                        <h3>주소</h3>
+                        <p>서울특별시 강남구 테헤란로 123</p>
                     </div>
                 </div>
-                <div class="contact__form">
-                    <form id="quote-form" class="quote-form">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="company" class="form-label">회사명 *</label>
-                                <input type="text" id="company" name="company" class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="name" class="form-label">담당자명 *</label>
-                                <input type="text" id="name" name="name" class="form-control" required>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="phone" class="form-label">연락처 *</label>
-                                <input type="tel" id="phone" name="phone" class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email" class="form-label">이메일 *</label>
-                                <input type="email" id="email" name="email" class="form-control" required>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="service-type" class="form-label">서비스 유형</label>
-                                <select id="service-type" name="service-type" class="form-control">
-                                    <option value="">선택하세요</option>
-                                    <option value="design">음향설계</option>
-                                    <option value="installation">음향설치</option>
-                                    <option value="product">제품구매</option>
-                                    <option value="other">기타</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="project-scale" class="form-label">프로젝트 규모</label>
-                                <select id="project-scale" name="project-scale" class="form-control">
-                                    <option value="">선택하세요</option>
-                                    <option value="small">소규모</option>
-                                    <option value="medium">중규모</option>
-                                    <option value="large">대규모</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="message" class="form-label">문의내용</label>
-                            <textarea id="message" name="message" class="form-control" rows="5" placeholder="프로젝트에 대한 상세한 내용을 입력해주세요."></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label class="checkbox-label">
-                                <input type="checkbox" id="privacy-agree" name="privacy-agree" required>
-                                <span class="checkmark"></span>
-                                개인정보 수집 및 이용에 동의합니다. *
-                            </label>
-                        </div>
-                        <button type="submit" class="btn btn--primary btn--full-width btn--lg">견적 요청 제출</button>
-                    </form>
-                </div>
+                <form class="contact__form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name" class="form-label">이름</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">이메일</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" class="form-label">전화번호</label>
+                        <input type="tel" id="phone" name="phone" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="service" class="form-label">문의 분야</label>
+                        <select id="service" name="service" class="form-control">
+                            <option value="">선택해주세요</option>
+                            <option value="design">음향 설계</option>
+                            <option value="installation">음향 설치</option>
+                            <option value="products">제품 문의</option>
+                            <option value="other">기타</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">문의내용</label>
+                        <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width">문의하기</button>
+                </form>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer py-16">
+    <footer class="footer">
         <div class="container">
             <div class="footer__content">
+                <div class="footer__brand">
+                    <h3>A49</h3>
+                    <p>음향 기술의 혁신</p>
+                </div>
                 <div class="footer__info">
-                    <h3 class="footer__title">AcousticPro</h3>
-                    <div class="footer__details">
-                        <p>서울특별시 강남구 테헤란로 123, 12층</p>
-                        <p>전화: 02-1234-5678 | 이메일: info@acousticpro.co.kr</p>
-                        <p>사업자등록번호: 123-45-67890</p>
-                    </div>
+                    <p>&copy; 2025 A49. All rights reserved.</p>
+                    <p>서울특별시 강남구 테헤란로 123 | 02-1234-5678</p>
                 </div>
-                <div class="footer__links">
-                    <a href="#" class="footer__link">개인정보처리방침</a>
-                    <a href="#" class="footer__link">이용약관</a>
-                </div>
-            </div>
-            <div class="footer__copyright">
-                <p>&copy; 2025 AcousticPro. All rights reserved.</p>
             </div>
         </div>
     </footer>
-
-    <!-- Success Modal -->
-    <div id="success-modal" class="modal">
-        <div class="modal__content">
-            <div class="modal__header">
-                <h3>견적 요청 완료</h3>
-                <button class="modal__close" onclick="closeModal()">&times;</button>
-            </div>
-            <div class="modal__body">
-                <i class="fas fa-check-circle modal__icon"></i>
-                <p>견적 요청이 성공적으로 전달되었습니다.<br>빠른 시간 내에 연락드리겠습니다.</p>
-            </div>
-            <div class="modal__footer">
-                <button class="btn btn--primary" onclick="closeModal()">확인</button>
-            </div>
-        </div>
-    </div>
 
     <script src="app.js"></script>
 </body>
