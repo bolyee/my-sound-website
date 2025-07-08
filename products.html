@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A49</title>
+    <link rel="stylesheet" href="style_product.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <a href="index.html" class="logo-link">
+                        <span class="logo-text">A49</span>
+                    </a>
+                    <span class="logo-tagline">We make standard audio</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Product</a></li>
+                    <li><a href="#services">서비스</a></li>
+                    <li><a href="#contact">연락처</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>제품 라인업</h2>
+                <p>최고의 음향 경험을 위한 프리미엄 제품들</p>
+            </div>
+
+            <div class="products-grid">
+                <!-- High-Performance Cables -->
+                <div class="product-card" data-product="cables">
+                    <div class="product-image">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1751527759/pplx_project_search_images/db7e1ad503a2ac41eb663db448a720cc0deab747.jpg" alt="고성능 케이블">
+                        <div class="product-overlay">
+                            <button class="btn btn--primary">자세히 보기</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>고성능 케이블</h3>
+                        <p class="product-category">오디오 케이블</p>
+                        <p class="product-description">오디오파일 등급의 신호 전송을 위한 프리미엄 오디오 케이블</p>
+                        <div class="product-features">
+                            <span class="feature">은도금 OCC 구리 도체</span>
+                            <span class="feature">다층 차폐</span>
+                            <span class="feature">저인덕턴스 설계</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Acoustic Panels -->
+                <div class="product-card" data-product="panels">
+                    <div class="product-image">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1751527759/pplx_project_search_images/04f81b42d97f64f673409c062f700cf410fdf69c.jpg" alt="음향 패널">
+                        <div class="product-overlay">
+                            <button class="btn btn--primary">자세히 보기</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>음향 패널</h3>
+                        <p class="product-category">룸 트리트먼트</p>
+                        <p class="product-description">최적의 음향 환경을 위한 정밀 제작 음향 처리 솔루션</p>
+                        <div class="product-features">
+                            <span class="feature">천연 목재 베니어</span>
+                            <span class="feature">고흡음 계수</span>
+                            <span class="feature">건축 통합 설계</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Subwoofer Speakers -->
+                <div class="product-card" data-product="subwoofers">
+                    <div class="product-image">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1751527760/pplx_project_search_images/052037da93f428e52485b521558912090b5d030d.jpg" alt="서브우퍼 스피커">
+                        <div class="product-overlay">
+                            <button class="btn btn--primary">자세히 보기</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>서브우퍼 스피커</h3>
+                        <p class="product-category">라우드스피커</p>
+                        <p class="product-description">깊고 정확한 저음 재생을 위한 레퍼런스 급 서브우퍼</p>
+                        <div class="product-features">
+                            <span class="feature">커스텀 드라이버</span>
+                            <span class="feature">강성 캐비닛</span>
+                            <span class="feature">고급 크로스오버</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <div class="product-detail-image">
+                    <img src="" alt="" id="modalImage">
+                </div>
+                <div class="product-detail-info">
+                    <h2 id="modalTitle"></h2>
+                    <p class="product-detail-category" id="modalCategory"></p>
+                    <p class="product-detail-description" id="modalDescription"></p>
+                    
+                    <div class="product-specifications">
+                        <h3>주요 특징</h3>
+                        <ul id="modalFeatures"></ul>
+                    </div>
+                    
+                    <div class="product-specifications">
+                        <h3>기술 사양</h3>
+                        <div id="modalSpecs"></div>
+                    </div>
+                    
+                    <div class="product-actions">
+                        <button class="btn btn--primary btn--full-width">문의하기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>연락처</h2>
+                    <p class="contact-tagline">프리미엄 오디오 솔루션에 대한 문의사항이 있으시면 언제든지 연락주세요.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <h3>A49 오디오 솔루션</h3>
+                            <p>음향 설치 · 음향 설계 · 제품 개발</p>
+                        </div>
+                        <div class="contact-item">
+                            <h4>전화</h4>
+                            <p>+82-2-XXXX-XXXX</p>
+                        </div>
+                        <div class="contact-item">
+                            <h4>이메일</h4>
+                            <p>info@a49audio.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <h4>주소</h4>
+                            <p>서울특별시, 대한민국</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>문의하기</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name" class="form-label">이름</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">이메일</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="product" class="form-label">관심 제품</label>
+                            <select id="product" name="product" class="form-control">
+                                <option value="">선택하세요</option>
+                                <option value="cables">고성능 케이블</option>
+                                <option value="panels">음향 패널</option>
+                                <option value="subwoofers">서브우퍼 스피커</option>
+                                <option value="installation">음향 설치</option>
+                                <option value="design">음향 설계</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">메시지</label>
+                            <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full-width">메시지 보내기</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">A49</span>
+                    <p>We make standard audio</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">홈</a>
+                    <a href="#products">제품</a>
+                    <a href="#services">서비스</a>
+                    <a href="#contact">연락처</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 A49 오디오 솔루션. 모든 권리 보유.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app_product.js"></script>
+</body>
+</html>
