@@ -51,7 +51,7 @@
 }
 
 .nav-links li a {
-    color: var(--white);
+    color: var(--a49-white);
     text-decoration: none;
     font-weight: 500;
     transition: var(--transition);

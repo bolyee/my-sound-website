@@ -239,10 +239,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: var(--font-family-base);
-  line-height: 1.6;
-  color: #ffffff;
-  background-color: #000000;
+  min-height: 100vh;
+  background-color: var(--a49-black);
   overflow-x: hidden;
 }
 
@@ -738,3 +736,85 @@ body {
 .main {
     padding-top: 10rem; /* 헤더의 높이만큼 여백을 줍니다. */
 }
+
+/* Footer Styles */
+.footer {
+    background-color: var(--a49-dark-gray);
+    color: var(--a49-white);
+    padding: 3rem 0;
+    font-size: 0.9rem;
+    border-top: 1px solid var(--a49-gray);
+}
+
+.footer .container {
+    /* Removed flex properties to avoid conflict with .footer-content grid */
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;
+}
+
+.footer-brand,
+.footer-services,
+.footer-contact {
+    margin-bottom: 1.5rem;
+}
+
+.footer-brand h3 {
+    color: var(--a49-gold);
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-tagline {
+    color: var(--a49-light-gray);
+    font-size: 0.85rem;
+}
+
+.footer-services h4,
+.footer-contact h4 {
+    color: var(--a49-gold);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.footer-services ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-services ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-services ul li a {
+    color: var(--a49-white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-services ul li a:hover {
+    color: var(--a49-gold);
+}
+
+.footer-contact p {
+    margin-bottom: 0.5rem;
+    color: var(--a49-white);
+}
+
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid var(--a49-gray);
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+    color: var(--a49-light-gray);
+}
+
+

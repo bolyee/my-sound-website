@@ -11,7 +11,7 @@
 
 .section-header h2 {
     font-size: 3rem;
-    color: var(--white);
+    color: var(--a49-white);
     margin-bottom: 1rem;
     font-weight: 300;
 }
@@ -86,7 +86,7 @@
 
 .product-info h3 {
     font-size: 1.5rem;
-    color: var(--white);
+    color: var(--a49-white);
     margin-bottom: 0.5rem;
 }
 
@@ -166,7 +166,7 @@
     right: 1rem;
     background: none;
     border: none;
-    color: var(--white);
+    color: var(--a49-white);
     font-size: 2rem;
     cursor: pointer;
     z-index: 10;
@@ -192,7 +192,7 @@
 }
 
 .product-detail-info h2 {
-    color: var(--white);
+    color: var(--a49-white);
     margin-bottom: 0.5rem;
 }
 
@@ -213,7 +213,7 @@
 }
 
 .product-specifications h3 {
-    color: var(--white);
+    color: var(--a49-white);
     margin-bottom: 1rem;
     font-size: 1.2rem;
 }
@@ -271,7 +271,7 @@
 
 .contact-info h2 {
     font-size: 3rem;
-    color: var(--white);
+    color: var(--a49-white);
     margin-bottom: 1rem;
     font-weight: 300;
 }
@@ -293,7 +293,7 @@
 }
 
 .contact-item h4 {
-    color: var(--white);
+    color: var(--a49-white);
     margin-bottom: 0.5rem;
     font-size: 1rem;
 }
@@ -310,7 +310,7 @@
 }
 
 .contact-form h3 {
-    color: var(--white);
+    color: var(--a49-white);
     margin-bottom: 2rem;
     font-size: 1.5rem;
 }
@@ -348,7 +348,7 @@
 
 .form-label {
     display: block;
-    color: var(--white);
+    color: var(--a49-white);
     margin-bottom: 0.5rem;
     font-weight: 500;
 }
@@ -359,7 +359,7 @@
     background: var(--black);
     border: 1px solid rgba(212, 175, 55, 0.3);
     border-radius: 6px;
-    color: var(--white);
+    color: var(--a49-white);
     font-size: 1rem;
     transition: var(--transition);
 }
