@@ -3,145 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A49 - 성과 및 실적</title>
+    <title>A49</title>
+    <link rel="stylesheet" href="style_common.css">
+    <link rel="stylesheet" href="style_header.css">
     <link rel="stylesheet" href="style_achievement.css">
 </head>
 <body>
-    <!-- Header -->
     <header class="header">
         <div class="container">
-            <div class="header-content">
+            <nav class="nav">
                 <div class="logo">
                     <a href="index.html" class="logo-link">
                         <span class="logo-text">A49</span>
                     </a>
+                    <span class="logo-tagline">We make standard audio</span>
                 </div>
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li><a href="#" class="nav-link">홈</a></li>
-                        <li><a href="#" class="nav-link">서비스</a></li>
-                        <li><a href="#" class="nav-link active">성과</a></li>
-                        <li><a href="#" class="nav-link">회사소개</a></li>
-                        <li><a href="#" class="nav-link">문의</a></li>
-                    </ul>
-                </nav>
-            </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Product</a></li>
+                    <li><a href="about_us.html">About us</a></li>
+                    <li><a href="technology.html">Technology</a></li>
+                    <li><a href="achievement.html">Achievement</a></li>
+                    <li><a href="#contact">연락처</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <!-- Main Content -->
     <main class="main">
-        <!-- Hero Section -->
-        <section class="hero">
+        <section class="timeline-section">
             <div class="container">
-                <div class="hero-content">
-                    <h1 class="hero-title">우리의 성과</h1>
-                    <p class="hero-subtitle">A49가 음향 서비스 업계를 선도하며 이뤄낸 혁신적인 성과들을 소개합니다</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Statistics Section -->
-        <section class="statistics">
-            <div class="container">
-                <div class="statistics-grid">
-                    <div class="stat-item">
-                        <span class="stat-number">200+</span>
-                        <span class="stat-label">누적 프로젝트</span>
+                <h2 class="section-title">회사 연혁</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>2010</h3>
+                            <p>A49 Audio 설립</p>
+                        </div>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-number">50+</span>
-                        <span class="stat-label">기업 클라이언트</span>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>2011</h3>
+                            <p>첫 번째 프로토타입 스피커 개발</p>
+                        </div>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-number">30+</span>
-                        <span class="stat-label">교육 프로그램</span>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>2012</h3>
+                            <p>시리즈 A 투자 유치</p>
+                        </div>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-number">25+</span>
-                        <span class="stat-label">연구 개발</span>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>2013</h3>
+                            <p>첫 번째 제품 'A49-P1' 출시</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Filters Section -->
-        <section class="filters">
-            <div class="container">
-                <div class="filters-content">
-                    <div class="filter-group">
-                        <label class="filter-label">연도별 필터</label>
-                        <select id="yearFilter" class="filter-select">
-                            <option value="">전체 연도</option>
-                            <option value="2024">2024</option>
-                            <option value="2023">2023</option>
-                            <option value="2022">2022</option>
-                            <option value="2021">2021</option>
-                            <option value="2020">2020</option>
-                        </select>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>2014</h3>
+                            <p>국제 오디오 어워드 수상</p>
+                        </div>
                     </div>
-                    <div class="filter-group">
-                        <label class="filter-label">카테고리별 필터</label>
-                        <select id="categoryFilter" class="filter-select">
-                            <option value="">전체 카테고리</option>
-                            <option value="기업">기업</option>
-                            <option value="교육">교육</option>
-                            <option value="연구개발">연구개발</option>
-                            <option value="시설">시설</option>
-                            <option value="이벤트">이벤트</option>
-                            <option value="미디어">미디어</option>
-                            <option value="문화">문화</option>
-                        </select>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>2015</h3>
+                            <p>두 번째 제품 'A49-P2' 출시</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Achievements Section -->
-        <section class="achievements">
-            <div class="container">
-                <div class="achievements-grid" id="achievementsGrid">
-                    <!-- Achievement cards will be populated by JavaScript -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>2016</h3>
+                            <p>미국 지사 설립</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>2017</h3>
+                            <p>유럽 시장 진출</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>2018</h3>
+                            <p>세 번째 제품 'A49-P3' 출시</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>2019</h3>
+                            <p>아시아 시장 진출</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>2020</h3>
+                            <p>네 번째 제품 'A49-P4' 출시</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>2021</h3>
+                            <p>글로벌 파트너십 체결</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>2022</h3>
+                            <p>다섯 번째 제품 'A49-P5' 출시</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>2023</h3>
+                            <p>본사 확장 이전</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>2024</h3>
+                            <p>여섯 번째 제품 'A49-P6' 출시</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h3 class="footer-title">A49</h3>
-                    <p class="footer-text">혁신적인 음향 서비스로 미래를 선도합니다</p>
+                <div class="footer-brand">
+                    <h3>A49</h3>
+                    <p class="footer-tagline">We make standard audio</p>
                 </div>
-                <div class="footer-section">
-                    <h4 class="footer-heading">서비스</h4>
-                    <ul class="footer-links">
-                        <li><a href="#" class="footer-link">음향 시스템 설계</a></li>
-                        <li><a href="#" class="footer-link">기업 교육</a></li>
-                        <li><a href="#" class="footer-link">연구 개발</a></li>
-                        <li><a href="#" class="footer-link">기술 컨설팅</a></li>
+                <div class="footer-services">
+                    <h4>서비스</h4>
+                    <ul>
+                        <li>음향 설치</li>
+                        <li>음향 설계</li>
+                        <li>제품 개발</li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h4 class="footer-heading">회사</h4>
-                    <ul class="footer-links">
-                        <li><a href="#" class="footer-link">회사소개</a></li>
-                        <li><a href="#" class="footer-link">성과</a></li>
-                        <li><a href="#" class="footer-link">채용정보</a></li>
-                        <li><a href="#" class="footer-link">문의</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4 class="footer-heading">연락처</h4>
-                    <p class="footer-contact">이메일: info@a49.co.kr</p>
-                    <p class="footer-contact">전화: 02-1234-5678</p>
-                    <p class="footer-contact">주소: 서울시 강남구 테헤란로 123</p>
+                <div class="footer-contact">
+                    <h4>연락처</h4>
+                    <p>전화: +82-2-XXXX-XXXX</p>
+                    <p>이메일: info@a49audio.com</p>
+                    <p>주소: 서울특별시 강남구 테헤란로 123, A49빌딩 5층</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 A49. All rights reserved.</p>
+                <p>&copy; 2025 A49 Audio. All rights reserved.</p>
             </div>
         </div>
     </footer>
