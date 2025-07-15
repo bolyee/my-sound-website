@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A49</title>
+    <link rel="stylesheet" href="style_common.css">
+    <link rel="stylesheet" href="style_header.css">
+    <link rel="stylesheet" href="style_research.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container"> 
+            <nav class="nav">
+                <div class="logo">
+                    <a href="index.html" class="logo-link">
+                        <span class="logo-text">A49</span>
+                    </a>
+                    <span class="logo-tagline">We make standard audio</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="about_us.html">About us</a></li>
+                    <li><a href="technology.html">Technology</a></li>
+                    <li><a href="achievement.html">Achievement</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Research Section -->
+    <main class="main main--research">
+        <div class="container">
+            <div class="section-header">
+                <h2>연구 개발</h2>
+                <p>최고의 음향 경험을 위한 혁신적인 연구</p>
+            </div>
+
+            <div class="research-grid">
+                <!-- High-Performance Cables -->
+                <div class="research-card" data-research="cables">
+                    <div class="research-image">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1751527759/pplx_project_search_images/db7e1ad503a2ac41eb663db448a720cc0deab747.jpg" alt="고성능 케이블 연구">
+                        <div class="research-overlay">
+                            <button class="btn btn--primary">자세히 보기</button>
+                        </div>
+                    </div>
+                    <div class="research-info">
+                        <h3>고성능 케이블 연구</h3>
+                        <p class="research-category">오디오 케이블</p>
+                        <p class="research-description">오디오파일 등급의 신호 전송을 위한 프리미엄 오디오 케이블 연구</p>
+                        <div class="research-features">
+                            <span class="feature">은도금 OCC 구리 도체</span>
+                            <span class="feature">다층 차폐</span>
+                            <span class="feature">저인덕턴스 설계</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Acoustic Panels -->
+                <div class="research-card" data-research="panels">
+                    <div class="research-image">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1751527759/pplx_project_search_images/04f81b42d97f64f673409c062f700cf410fdf69c.jpg" alt="음향 패널 연구">
+                        <div class="research-overlay">
+                            <button class="btn btn--primary">자세히 보기</button>
+                        </div>
+                    </div>
+                    <div class="research-info">
+                        <h3>음향 패널 연구</h3>
+                        <p class="research-category">룸 트리트먼트</p>
+                        <p class="research-description">최적의 음향 환경을 위한 정밀 제작 음향 처리 솔루션 연구</p>
+                        <div class="research-features">
+                            <span class="feature">천연 목재 베니어</span>
+                            <span class="feature">고흡음 계수</span>
+                            <span class="feature">건축 통합 설계</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Subwoofer Speakers -->
+                <div class="research-card" data-research="subwoofers">
+                    <div class="research-image">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1751527760/pplx_project_search_images/052037da93f428e52485b521558912090b5d030d.jpg" alt="서브우퍼 스피커 연구">
+                        <div class="research-overlay">
+                            <button class="btn btn--primary">자세히 보기</button>
+                        </div>
+                    </div>
+                    <div class="research-info">
+                        <h3>서브우퍼 스피커 연구</h3>
+                        <p class="research-category">라우드스피커</p>
+                        <p class="research-description">깊고 정확한 저음 재생을 위한 레퍼런스 급 서브우퍼 연구</p>
+                        <div class="research-features">
+                            <span class="feature">커스텀 드라이버</span>
+                            <span class="feature">강성 캐비닛</span>
+                            <span class="feature">고급 크로스오버</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- research Details Modal -->
+    <div class="modal" id="researchModal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <div class="research-detail-image">
+                    <img src="" alt="" id="modalImage">
+                </div>
+                <div class="research-detail-info">
+                    <h2 id="modalTitle"></h2>
+                    <p class="research-detail-category" id="modalCategory"></p>
+                    <p class="research-detail-description" id="modalDescription"></p>
+                    
+                    <div class="research-specifications">
+                        <h3>주요 특징</h3>
+                        <ul id="modalFeatures"></ul>
+                    </div>
+                    
+                    <div class="research-specifications">
+                        <h3>기술 사양</h3>
+                        <div id="modalSpecs"></div>
+                    </div>
+                    
+                    <div class="research-actions">
+                        <button class="btn btn--primary btn--full-width">문의하기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>A49</h3>
+                    <p class="footer-tagline">We make standard audio</p>
+                </div>
+                <div class="footer-services">
+                    <h4>서비스</h4>
+                    <ul>
+                        <li>음향 설치</li>
+                        <li>음향 설계</li>
+                        <li>제품 개발</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>연락처</h4>
+                    <p>전화: +82-2-XXXX-XXXX</p>
+                    <p>이메일: info@a49audio.com</p>
+                    <p>주소: 경기 고양시 일산동구 호수로 678 704호</p>
+                </div>
+                
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 A49 Audio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app_research.js"></script>
+</body>
+</html>
