@@ -3,52 +3,52 @@ class Slideshow {
     constructor() {
         this.slides = document.querySelectorAll('.slide');
         this.indicators = document.querySelectorAll('.indicator');
+        this.prevButton = document.querySelector('.slideshow-arrow.prev');
+        this.nextButton = document.querySelector('.slideshow-arrow.next');
         this.currentSlide = 0;
         this.slideInterval = null;
         this.isTransitioning = false;
         
-        // Debug logging
-        console.log('Slideshow initialized with', this.slides.length, 'slides');
-        
         if (this.slides.length > 0) {
             this.init();
-        } else {
-            console.error('No slides found!');
         }
     }
     
     init() {
-        // Ensure first slide is active
         this.slides[0].classList.add('active');
         this.indicators[0].classList.add('active');
         
-        // Set up indicator click handlers
         this.indicators.forEach((indicator, index) => {
             indicator.addEventListener('click', () => {
                 if (!this.isTransitioning) {
                     this.goToSlide(index);
+                    this.resetAutoSlide();
                 }
             });
         });
+
+        this.prevButton.addEventListener('click', () => {
+            if (!this.isTransitioning) {
+                this.prevSlide();
+                this.resetAutoSlide();
+            }
+        });
+
+        this.nextButton.addEventListener('click', () => {
+            if (!this.isTransitioning) {
+                this.nextSlide();
+                this.resetAutoSlide();
+            }
+        });
         
-        // Start automatic slideshow after a short delay
-        setTimeout(() => {
-            this.startAutoSlide();
-        }, 2000);
+        this.startAutoSlide();
         
-        // Pause on hover
         const slideshowContainer = document.querySelector('.slideshow-container');
         if (slideshowContainer) {
-            slideshowContainer.addEventListener('mouseenter', () => {
-                this.pauseAutoSlide();
-            });
-            
-            slideshowContainer.addEventListener('mouseleave', () => {
-                this.startAutoSlide();
-            });
+            slideshowContainer.addEventListener('mouseenter', () => this.pauseAutoSlide());
+            slideshowContainer.addEventListener('mouseleave', () => this.startAutoSlide());
         }
         
-        // Handle visibility change (pause when tab is not active)
         document.addEventListener('visibilitychange', () => {
             if (document.hidden) {
                 this.pauseAutoSlide();
@@ -56,8 +56,6 @@ class Slideshow {
                 this.startAutoSlide();
             }
         });
-        
-        console.log('Slideshow initialized successfully');
     }
     
     goToSlide(index) {
@@ -65,44 +63,46 @@ class Slideshow {
         
         this.isTransitioning = true;
         
-        // Remove active class from current slide and indicator
         this.slides[this.currentSlide].classList.remove('active');
         this.indicators[this.currentSlide].classList.remove('active');
         
-        // Update current slide index
         this.currentSlide = index;
         
-        // Add active class to new slide and indicator
         this.slides[this.currentSlide].classList.add('active');
         this.indicators[this.currentSlide].classList.add('active');
         
-        console.log('Switched to slide', index);
-        
-        // Reset transition flag after transition completes
         setTimeout(() => {
             this.isTransitioning = false;
-        }, 1500); // Match CSS transition duration
+        }, 1500);
     }
     
     nextSlide() {
         const nextIndex = (this.currentSlide + 1) % this.slides.length;
         this.goToSlide(nextIndex);
     }
+
+    prevSlide() {
+        const prevIndex = (this.currentSlide - 1 + this.slides.length) % this.slides.length;
+        this.goToSlide(prevIndex);
+    }
     
     startAutoSlide() {
-        this.pauseAutoSlide(); // Clear any existing interval
+        this.pauseAutoSlide();
         this.slideInterval = setInterval(() => {
             this.nextSlide();
-        }, 4500); // 4.5 seconds between slides
-        console.log('Auto-slide started');
+        }, 4500);
     }
     
     pauseAutoSlide() {
         if (this.slideInterval) {
             clearInterval(this.slideInterval);
             this.slideInterval = null;
-            console.log('Auto-slide paused');
         }
+    }
+
+    resetAutoSlide() {
+        this.pauseAutoSlide();
+        this.startAutoSlide();
     }
 }
 

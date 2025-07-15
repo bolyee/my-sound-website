@@ -137,6 +137,32 @@
     background: rgba(255, 255, 255, 0.7);
 }
 
+.slideshow-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 1.5rem;
+    transition: background 0.3s ease;
+}
+
+.slideshow-arrow:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.slideshow-arrow.prev {
+    left: 1rem;
+}
+
+.slideshow-arrow.next {
+    right: 1rem;
+}
+
 /* Description Section */
 .description-section {
     padding: 6rem 0;
