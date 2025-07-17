@@ -2,163 +2,147 @@
 const technologies = [
   {
     id: 1,
-    name: "KRK Rokit RP8 G4",
-    category: "audio-equipment",
+    name: "3-OMNI-5-4",
+    category: "room-acoustics-measurement",
     type: "Studio Monitors",
     description: "High-precision near-field monitors delivering accurate audio reproduction with flat frequency response for professional mixing and mastering.",
-    image: "https://images.stockcake.com/public/7/f/4/7f4c9361-0581-4570-980d-673f59057f99_large/professional-audio-paradise-stockcake.jpg"
+    image: "room acoustics measurement/3-OMNI-5-4.jpg"
   },
   {
     id: 2,
-    name: "Focusrite Scarlett 18i20",
-    category: "audio-equipment", 
+    name: "earthworks_measurement_M30",
+    category: "room-acoustics-measurement", 
     type: "Audio Interface",
     description: "Professional 18-input, 20-output USB audio interface with premium preamps and crystal-clear sound quality for multi-track recording.",
-    image: "https://pplx-res.cloudinary.com/image/upload/v1748845369/pplx_project_search_images/6a1d35723710b310b584fa98cf0705cba1c39f57.jpg"
+    image: "room acoustics measurement/earthworks_measurement_M30.jpg"
   },
   {
     id: 3,
-    name: "Yamaha DM7 Series",
-    category: "audio-equipment",
+    name: "images",
+    category: "room-acoustics-measurement",
     type: "Digital Mixer", 
     description: "Advanced digital mixing console featuring intuitive operation, superior sound quality, and comprehensive connectivity for live and studio applications.",
-    image: "https://pplx-res.cloudinary.com/image/upload/v1751522596/pplx_project_search_images/612cccd120bb1f975120a1cf3c8cd96197dae4ff.jpg"
+    image: "room acoustics measurement/images.jpg"
   },
   {
     id: 4,
-    name: "DPA 4099 CORE+",
-    category: "audio-equipment",
+    name: "kit-xl2",
+    category: "room-acoustics-measurement",
     type: "Instrument Microphone",
     description: "Premium condenser microphone with CORE+ technology, delivering pristine natural sound with exceptional isolation and off-axis rejection.",
-    image: "https://pplx-res.cloudinary.com/image/upload/v1751522596/pplx_project_search_images/98164db20885d29b33381a96be9ce2f429cec467.jpg"
+    image: "room acoustics measurement/kit-xl2.webp"
   },
   {
     id: 5,
-    name: "Genelec 8341A", 
-    category: "audio-equipment",
+    name: "RME", 
+    category: "room-acoustics-measurement",
     type: "Active Monitor",
     description: "Three-way active studio monitor with advanced DSP processing, providing accurate sound reproduction and intelligent room adaptation features.",
-    image: "https://pplx-res.cloudinary.com/image/upload/v1748564227/pplx_project_search_images/f79bdd909ff774afdd80d713276c74e8432d76ee.jpg"
+    image: "room acoustics measurement/RME.png"
   },
   {
     id: 6,
-    name: "Universal Audio Apollo Twin X",
-    category: "audio-equipment",
+    name: "turntable",
+    category: "room-acoustics-measurement",
     type: "Audio Interface", 
     description: "Twin-channel USB audio interface with real-time DSP processing, featuring UA's renowned microphone preamps and professional conversion quality.",
-    image: "https://images.stockcake.com/public/7/f/4/7f4c9361-0581-4570-980d-673f59057f99_large/professional-audio-paradise-stockcake.jpg"
+    image: "room acoustics measurement/turntable.jpg"
   },
   {
     id: 7,
-    name: "Rode PodMic USB",
-    category: "audio-equipment",
+    name: "fine-cone-hero",
+    category: "speaker-design-software",
     type: "Dynamic Microphone",
     description: "Professional broadcast-quality dynamic microphone optimized for podcasting, streaming, and vocal recording with built-in USB connectivity.",
-    image: "https://pplx-res.cloudinary.com/image/upload/v1751522596/pplx_project_search_images/98164db20885d29b33381a96be9ce2f429cec467.jpg"
+    image: "speaker design software/fine-cone-hero.jpg"
   },
   {
     id: 8,
-    name: "Midas M32",
-    category: "audio-equipment",
+    name: "FINE-X-over-Full",
+    category: "speaker-design-software",
     type: "Digital Console",
     description: "Professional 32-channel digital mixing console with premium Midas preamps, advanced processing capabilities, and comprehensive live sound features.",
-    image: "https://pplx-res.cloudinary.com/image/upload/v1751522596/pplx_project_search_images/612cccd120bb1f975120a1cf3c8cd96197dae4ff.jpg"
+    image: "speaker design software/FINE-X-over-Full.webp"
   },
   {
     id: 9,
-    name: "Avid Pro Tools",
-    category: "software-solutions",
+    name: "finebox",
+    category: "speaker-design-software",
     type: "Digital Audio Workstation",
     description: "Industry-standard DAW for professional audio production, offering advanced recording, editing, mixing, and mastering capabilities.",
-    image: "https://images.stockcake.com/public/c/4/a/c4adce02-d41b-4e95-9c5c-ca0d7c5c56f5_large/sleek-audio-workstation-stockcake.jpg"
+    image: "speaker design software/finebox.jpg"
   },
   {
     id: 10,
-    name: "Room EQ Wizard (REW)",
-    category: "software-solutions",
+    name: "FINEMotorPRO-FEA",
+    category: "speaker-design-software",
     type: "Acoustic Measurement",
     description: "Comprehensive room acoustics measurement software for speaker placement optimization, room correction, and acoustic analysis.",
-    image: "https://images.stockcake.com/public/8/5/4/8548b3cd-6bb4-4ac8-bf1b-09ecf95b2b48_large/digital-audio-workstation-stockcake.jpg"
+    image: "speaker design software/FINEMotorPRO-FEA.webp"
   },
   {
     id: 11,
-    name: "AFMG EASE",
-    category: "software-solutions", 
+    name: "APx555-B-Series",
+    category: "speaker-microphone-measurement", 
     type: "Acoustic Simulation",
     description: "Professional electro-acoustic simulation software for sound system design, room acoustics modeling, and loudspeaker system optimization.",
-    image: "https://images.stockcake.com/public/c/4/a/c4adce02-d41b-4e95-9c5c-ca0d7c5c56f5_large/sleek-audio-workstation-stockcake.jpg"
+    image: "speaker microphone measurement/APx555-B-Series.png"
   },
   {
     id: 12,
-    name: "Ableton Live 12",
-    category: "software-solutions",
+    name: "audiology_ear_simulators_couplers",
+    category: "speaker-microphone-measurement",
     type: "Creative DAW", 
     description: "Advanced digital audio workstation designed for music production, live performance, and creative sound design with innovative workflow features.",
-    image: "https://images.stockcake.com/public/8/5/4/8548b3cd-6bb4-4ac8-bf1b-09ecf95b2b48_large/digital-audio-workstation-stockcake.jpg"
+    image: "speaker microphone measurement/audiology_ear_simulators_couplers.jpg"
   },
   {
     id: 13,
-    name: "Soundly",
-    category: "software-solutions",
+    name: "B&K 4128C",
+    category: "speaker-microphone-measurement",
     type: "Sound Design Platform",
     description: "Comprehensive sound effects library and management platform with AI-powered search and seamless DAW integration for sound designers.",
-    image: "https://images.stockcake.com/public/c/4/a/c4adce02-d41b-4e95-9c5c-ca0d7c5c56f5_large/sleek-audio-workstation-stockcake.jpg"
+    image: "speaker microphone measurement/B&K 4128C.jpg"
   },
   {
     id: 14,
-    name: "ARTA",
-    category: "software-solutions",
+    name: "Fn-dsx-8000mi_01f_ko",
+    category: "speaker-microphone-measurement",
     type: "Audio Analysis", 
     description: "Real-time audio analysis and measurement software for acoustic testing, frequency response analysis, and audio system optimization.",
-    image: "https://images.stockcake.com/public/8/5/4/8548b3cd-6bb4-4ac8-bf1b-09ecf95b2b48_large/digital-audio-workstation-stockcake.jpg"
+    image: "speaker microphone measurement/Fn-dsx-8000mi_01f_ko.jpg"
   },
   {
     id: 15,
-    name: "Audio Design Desk",
-    category: "software-solutions",
+    name: "kit-xl2",
+    category: "speaker-microphone-measurement",
     type: "Video Audio DAW",
     description: "Specialized digital audio workstation for video post-production, featuring AI-powered sound design tools and extensive royalty-free libraries.",
-    image: "https://images.stockcake.com/public/c/4/a/c4adce02-d41b-4e95-9c5c-ca0d7c5c56f5_large/sleek-audio-workstation-stockcake.jpg"
+    image: "speaker microphone measurement/kit-xl2.webp"
   },
   {
     id: 16,
-    name: "NTi Audio XL2",
-    category: "measurement-tools",
+    name: "klippel production analyzer",
+    category: "speaker-microphone-measurement",
     type: "Sound Level Meter",
     description: "Professional Class 1 sound level analyzer with comprehensive measurement capabilities for acoustic and audio testing applications.",
-    image: "https://images.stockcake.com/public/9/e/1/9e1a2dc0-a51a-4924-bb36-89d9b7b8b4c7_large/precision-audio-equipment-stockcake.jpg"
+    image: "speaker microphone measurement/klippel production analyzer.png"
   },
   {
     id: 17,
-    name: "Brüel & Kjær 4189",
-    category: "measurement-tools",
+    name: "LibreVNA-2-0-100KHz-6GHz-USB-2-6-PCB",
+    category: "speaker-microphone-measurement",
     type: "Measurement Microphone",
     description: "Precision measurement microphone with exceptional accuracy and stability for professional acoustic testing and calibration applications.",
-    image: "https://pplx-res.cloudinary.com/image/upload/v1751522596/pplx_project_search_images/98164db20885d29b33381a96be9ce2f429cec467.jpg"
+    image: "speaker microphone measurement/LibreVNA-2-0-100KHz-6GHz-USB-2-6-PCB.webp"
   },
   {
     id: 18,
-    name: "NTi Audio MiniSonic",
-    category: "measurement-tools",
+    name: "listen ampconnect",
+    category: "speaker-microphone-measurement",
     type: "Audio Analyzer",
     description: "Portable two-channel audio test instrument for precision audio system alignment, testing, and troubleshooting in field applications.",
-    image: "https://images.stockcake.com/public/9/e/1/9e1a2dc0-a51a-4924-bb36-89d9b7b8b4c7_large/precision-audio-equipment-stockcake.jpg"
-  },
-  {
-    id: 19,
-    name: "UMIK-1",
-    category: "measurement-tools", 
-    type: "USB Measurement Mic",
-    description: "Calibrated USB measurement microphone designed for room acoustic analysis, speaker measurements, and audio system optimization.",
-    image: "https://pplx-res.cloudinary.com/image/upload/v1751522596/pplx_project_search_images/98164db20885d29b33381a96be9ce2f429cec467.jpg"
-  },
-  {
-    id: 20,
-    name: "NTi Audio TalkBox",
-    category: "measurement-tools",
-    type: "Acoustic Source",
-    description: "Calibrated speech simulation source for STI (Speech Transmission Index) measurements and intelligibility testing in various acoustic environments.",
-    image: "https://images.stockcake.com/public/9/e/1/9e1a2dc0-a51a-4924-bb36-89d9b7b8b4c7_large/precision-audio-equipment-stockcake.jpg"
+    image: "speaker microphone measurement/listen ampconnect.jpg"
   }
 ];
 
